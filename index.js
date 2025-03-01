@@ -25,7 +25,7 @@ app.use("/api/certificates", certificateRoute);
 
 // Database Connection
 mongoose
-  .connect(process.env.MONGO_URI, { useUnifiedTopology: true })
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.error("❌ MongoDB Connection Failed:", err));
 
