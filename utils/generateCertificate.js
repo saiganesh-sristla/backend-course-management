@@ -1,6 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-const PDFDocument = require("pdfkit");
+import fs from "fs"
+import path from "path"
+import PDFDocument from "pdfkit"
+
 
 const generateCertificate = (enrollment) => {
   return new Promise((resolve, reject) => {
@@ -147,4 +148,4 @@ const generateCertificate = (enrollment) => {
   });
 };
 
-module.exports = generateCertificate;
+export default generateCertificate;
